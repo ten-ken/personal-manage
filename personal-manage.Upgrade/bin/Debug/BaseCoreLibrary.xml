@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BaseCoreLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:BaseCoreLibrary.DES.DESEncrypt(System.String,System.String,System.String)">
+            <summary>
+            DES加密
+            </summary>
+            <param name="dataSource">加密数据</param>
+            <param name="keyValue">8位字符的密钥字符串</param>
+            <param name="iv">8位字符的初始化向量字符串</param>
+            <returns></returns>
+        </member>
+        <member name="M:BaseCoreLibrary.DES.DESDecrypt(System.String,System.String,System.String)">
+            <summary>
+            DES解密
+            </summary>
+            <param name="desData">解密数据</param>
+            <param name="key">8位字符的密钥字符串(需要和加密时相同)</param>
+            <param name="iv">8位字符的初始化向量字符串(需要和加密时相同)</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

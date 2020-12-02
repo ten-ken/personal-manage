@@ -1,0 +1,8 @@
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\bin\x64\Debug\MyWfControls.dll
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\bin\x64\Debug\MyWfControls.pdb
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.KenPage.resources
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.Properties.Resources.resources
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.dll
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\x64\Debug\MyWfControls.pdb

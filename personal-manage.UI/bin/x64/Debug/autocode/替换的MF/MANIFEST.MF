@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Spring-Boot-Classpath-Index: BOOT-INF/classpath.idx
+Archiver-Version: Plexus Archiver
+Built-By: Administrator
+Start-Class: com.ken.autocode.tools.generator.mainr.JarCodeRun
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+Spring-Boot-Version: 2.3.0.RELEASE
+Created-By: Apache Maven 3.2.3
+Build-Jdk: 1.8.0_191
+Main-Class: org.springframework.boot.loader.JarLauncher
+Class-Path: lib/ojdbc7-12.1.0.2.jar
+

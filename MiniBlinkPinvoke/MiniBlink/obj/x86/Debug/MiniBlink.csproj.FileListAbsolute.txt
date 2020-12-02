@@ -1,0 +1,7 @@
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\bin\x86\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\bin\x86\Debug\MiniBlink.pdb
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x86\Debug\MiniBlinkPinvoke.BlinkBrowser.resources
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x86\Debug\MiniBlink.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x86\Debug\MiniBlink.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x86\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x86\Debug\MiniBlink.pdb

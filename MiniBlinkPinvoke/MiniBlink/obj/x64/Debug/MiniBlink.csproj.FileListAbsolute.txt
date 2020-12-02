@@ -1,0 +1,16 @@
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\bin\x64\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\bin\x64\Debug\MiniBlink.pdb
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlinkPinvoke.BlinkBrowser.resources
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.pdb
+E:\projectpath\csharp-code\pm\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csprojAssemblyReference.cache
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\bin\x64\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\bin\x64\Debug\MiniBlink.pdb
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlinkPinvoke.BlinkBrowser.resources
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.dll
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.pdb
+E:\projectpath\csharp-code\personal-manage\MiniBlinkPinvoke\MiniBlink\obj\x64\Debug\MiniBlink.csprojAssemblyReference.cache

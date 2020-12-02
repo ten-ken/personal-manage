@@ -1,0 +1,13 @@
+打包时 移除项
+
+SharpCompress.dll
+
+System.Buffers.dll
+
+System.Memory.dll
+
+System.Runtime.CompilerServices.Unsafe.dll
+
+updated_version.exe 相关 如config pdb文件
+
+移除根目录下所有txt文件

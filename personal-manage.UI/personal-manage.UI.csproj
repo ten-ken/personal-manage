@@ -1,0 +1,656 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DF1C9E9D-EA7A-4475-A8B9-780CC4ED766B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>personal_manage.UI</RootNamespace>
+    <AssemblyName>个人管理</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B968F3E77875E66468828D429F20097D1DA8A8EF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>personal-manage.UI_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BaseControlExt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\BaseControlExt.dll</HintPath>
+    </Reference>
+    <Reference Include="MyWfControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\MyWfControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TX.Framework.WindowUI, Version=1.0.0.3, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\projectpath\csharp-code\myproject\personal-manage\personal-manage.UI\dll\TX.Framework.WindowUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeProjectList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeProjectList.Designer.cs">
+      <DependentUpon>CodeProjectList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\DialogForm.Designer.cs">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\ImportForm.Designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\PicturePreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\PicturePreview.Designer.cs">
+      <DependentUpon>PicturePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UploadFileFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\UploadFileFrm.Designer.cs">
+      <DependentUpon>UploadFileFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\UploadForm.Designer.cs">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UpLoadLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\UpLoadLoading.Designer.cs">
+      <DependentUpon>UpLoadLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\UploadMultiFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\UploadMultiFile.Designer.cs">
+      <DependentUpon>UploadMultiFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeProjectAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeProjectAdd.Designer.cs">
+      <DependentUpon>CodeProjectAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\XLEngine.cs" />
+    <Compile Include="CsharpAuto\AutoCodeConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsharpAuto\AutoCodeConfigForm.Designer.cs">
+      <DependentUpon>AutoCodeConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsharpAuto\FormCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsharpAuto\FormCreate.Designer.cs">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsharpAuto\FormTemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsharpAuto\FormTemList.Designer.cs">
+      <DependentUpon>FormTemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsharpAuto\FormDbConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsharpAuto\FormDbConfig.Designer.cs">
+      <DependentUpon>FormDbConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsharpAuto\FormTemAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CsharpAuto\FormTemAdd.Designer.cs">
+      <DependentUpon>FormTemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemoAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemoAdd.Designer.cs">
+      <DependentUpon>FormDemoAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemoChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemoChart.Designer.cs">
+      <DependentUpon>FormDemoChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDemoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDemoList.Designer.cs">
+      <DependentUpon>FormDemoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frame.Designer.cs">
+      <DependentUpon>Frame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginFrm.Designer.cs">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Demo\BaseListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Demo\BaseListForm.Designer.cs">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Components\FormProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Components\FormProcess.Designer.cs">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Demo\FormTreeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Demo\FormTreeList.Designer.cs">
+      <DependentUpon>FormTreeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Components\FormUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Components\FormUpload.Designer.cs">
+      <DependentUpon>FormUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Components\FrmUploadProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Components\FrmUploadProcess.Designer.cs">
+      <DependentUpon>FrmUploadProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProject\Demo\FrmBzjAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProject\Demo\FrmBzjAdd.Designer.cs">
+      <DependentUpon>FrmBzjAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mytools\AccoutEncFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mytools\AccoutEncFrm.Designer.cs">
+      <DependentUpon>AccoutEncFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mytools\AccoutEncFrmList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mytools\AccoutEncFrmList.Designer.cs">
+      <DependentUpon>AccoutEncFrmList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mytools\FormCrypt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mytools\FormCrypt.Designer.cs">
+      <DependentUpon>FormCrypt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\Browser2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser\Browser2.Designer.cs">
+      <DependentUpon>Browser2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mytools\FormTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mytools\FormTools.designer.cs">
+      <DependentUpon>FormTools.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestData.cs" />
+    <Compile Include="Util\CefUtils.cs" />
+    <Compile Include="WebBrowser\WebBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WebBrowser\WebBrowserForm.designer.cs">
+      <DependentUpon>WebBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WebBrowser\WebBrowserFrm.cs" />
+    <Compile Include="WebBrowser\WebBrowserFrm.Designer.cs">
+      <DependentUpon>WebBrowserFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CodeProjectList.resx">
+      <DependentUpon>CodeProjectList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\DialogForm.resx">
+      <DependentUpon>DialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\PicturePreview.resx">
+      <DependentUpon>PicturePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UploadFileFrm.resx">
+      <DependentUpon>UploadFileFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UploadForm.resx">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UpLoadLoading.resx">
+      <DependentUpon>UpLoadLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\UploadMultiFile.resx">
+      <DependentUpon>UploadMultiFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeProjectAdd.resx">
+      <DependentUpon>CodeProjectAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsharpAuto\AutoCodeConfigForm.resx">
+      <DependentUpon>AutoCodeConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsharpAuto\FormCreate.resx">
+      <DependentUpon>FormCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsharpAuto\FormTemAdd.resx">
+      <DependentUpon>FormTemAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsharpAuto\FormTemList.resx">
+      <DependentUpon>FormTemList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsharpAuto\FormDbConfig.resx">
+      <DependentUpon>FormDbConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemoAdd.resx">
+      <DependentUpon>FormDemoAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemoChart.resx">
+      <DependentUpon>FormDemoChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDemoList.resx">
+      <DependentUpon>FormDemoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frame.resx">
+      <DependentUpon>Frame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginFrm.resx">
+      <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Demo\BaseListForm.resx">
+      <DependentUpon>BaseListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Components\FormProcess.resx">
+      <DependentUpon>FormProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Demo\FormTreeList.resx">
+      <DependentUpon>FormTreeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Components\FormUpload.resx">
+      <DependentUpon>FormUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Components\FrmUploadProcess.resx">
+      <DependentUpon>FrmUploadProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProject\Demo\FrmBzjAdd.resx">
+      <DependentUpon>FrmBzjAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mytools\AccoutEncFrm.resx">
+      <DependentUpon>AccoutEncFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mytools\AccoutEncFrmList.resx">
+      <DependentUpon>AccoutEncFrmList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mytools\FormCrypt.resx">
+      <DependentUpon>FormCrypt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser\Browser2.resx">
+      <DependentUpon>Browser2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mytools\FormTools.resx">
+      <DependentUpon>FormTools.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="WebBrowser\WebBrowserForm.resx">
+      <DependentUpon>WebBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebBrowser\WebBrowserFrm.resx">
+      <DependentUpon>WebBrowserFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="libs\XL\download\id.dat" />
+    <None Include="packages.config" />
+    <None Include="personal-manage.UI_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniBlinkPinvoke\MiniBlink\MiniBlink.csproj">
+      <Project>{ff9f4c6e-b7ba-498a-9f3f-49f27ce9af1a}</Project>
+      <Name>MiniBlink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\personal-manage.BLL\personal-manage.BLL.csproj">
+      <Project>{691adc8c-93da-4aaf-b725-6f2b56cedbfa}</Project>
+      <Name>personal-manage.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\personal-manage.Common\personal-manage.Common.csproj">
+      <Project>{730070f9-05d6-48d6-a1a2-6bae45b1f284}</Project>
+      <Name>personal-manage.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\personal-manage.Models\personal-manage.Models.csproj">
+      <Project>{7bcad0d5-cebe-4219-b32f-b8dceb67e0e7}</Project>
+      <Name>personal-manage.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FrmModels\" />
+    <Folder Include="MyProject\CM\" />
+    <Folder Include="MyProject\SYS\MenuMgn\" />
+    <Folder Include="MyProject\SYS\RoleMgn\" />
+    <Folder Include="MyProject\SYS\UserMgn\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\account-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all_check_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\all_uncheck_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basic-info-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkall-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Create_Files.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downtime_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\downtime_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dzqz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personcenter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pwd-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-confirm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-confirm-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select-confirm-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncheck-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\word-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zxtb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\BaseControlExt.dll" />
+    <Content Include="dll\MyWfControls.dll" />
+    <Content Include="dll\node.dll" />
+    <Content Include="dll\TX.Framework.dll" />
+    <Content Include="dll\TX.Framework.WindowUI.dll" />
+    <Content Include="favicon.ico" />
+    <Content Include="libs\MiniBlink.dll" />
+    <Content Include="libs\XL\download\atl71.dll" />
+    <Content Include="libs\XL\download\dl_peer_id.dll" />
+    <Content Include="libs\XL\download\download_engine.dll" />
+    <Content Include="libs\XL\download\MiniThunderPlatform.exe" />
+    <Content Include="libs\XL\download\minizip.dll" />
+    <Content Include="libs\XL\download\msvcp71.dll" />
+    <Content Include="libs\XL\download\msvcr71.dll" />
+    <Content Include="libs\XL\download\XLBugHandler.dll" />
+    <Content Include="libs\XL\download\XLBugReport.exe" />
+    <Content Include="libs\XL\download\zlib1.dll" />
+    <Content Include="libs\XL\xldl.dll" />
+    <None Include="Resources\icon-file-mgn.png" />
+    <None Include="Resources\icon-process.png" />
+    <None Include="Resources\encryption.png" />
+    <None Include="Resources\icon-tools.png" />
+    <None Include="Resources\brower.png" />
+    <None Include="Resources\project_copy.png" />
+    <None Include="Resources\download-white-32.png" />
+    <None Include="Resources\import-white-32.png" />
+    <None Include="Resources\file_32_upload.png" />
+    <None Include="Resources\form_restore.png" />
+    <None Include="Resources\form_close.png" />
+    <None Include="Resources\system_quit.png" />
+    <None Include="Resources\business_basic.png" />
+    <None Include="Resources\business_center.png" />
+    <None Include="Resources\bs_return.png" />
+    <None Include="Resources\bs_monitor.png" />
+    <None Include="Resources\bs_upload.png" />
+    <None Include="Resources\business_dzqz.png" />
+    <None Include="Resources\bszz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{730070F9-05D6-48D6-A1A2-6BAE45B1F284}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>personal_manage.Common</RootNamespace>
+    <AssemblyName>personal-manage.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>dll\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Email, Version=3.3.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Aspose.Email.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Pdf">
+      <HintPath>dll\Aspose.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Slides, Version=7.8.0.0, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\Aspose.Slides.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Words">
+      <HintPath>dll\Aspose.Words.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\NVelocity.1.1.1\lib\net40\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\netstandard1.1\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.113.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard1.1\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UTCAdapt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4ea014baebeb69c9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\UTCAdapt.dll</HintPath>
+    </Reference>
+    <Reference Include="UTCCrypt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=478818ed31cb2747, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\UTCCrypt.dll</HintPath>
+    </Reference>
+    <Reference Include="UTCSeal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d234635f574b2c58, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\UTCSeal.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="attr\ColumnInfoAttribute.cs" />
+    <Compile Include="attr\PrimaryKeyAttribute.cs" />
+    <Compile Include="attr\TableFieldAttribute.cs" />
+    <Compile Include="attr\TableNameAttribute.cs" />
+    <Compile Include="attr\VerifyAttribute.cs" />
+    <Compile Include="constant\CacheConstant.cs" />
+    <Compile Include="dto\CacheObject.cs" />
+    <Compile Include="dto\CommandInfo.cs" />
+    <Compile Include="dto\SqlModel.cs" />
+    <Compile Include="dto\TableFieldInfo.cs" />
+    <Compile Include="dto\TableInfo.cs" />
+    <Compile Include="dto\UKResult.cs" />
+    <Compile Include="dto\VerifyMessage.cs" />
+    <Compile Include="dto\PublicVo.cs" />
+    <Compile Include="enums\WhereType.cs" />
+    <Compile Include="prop\LogInfo.cs" />
+    <Compile Include="util\AutoUpdateUtils.cs" />
+    <Compile Include="util\Base64Helper.cs" />
+    <Compile Include="util\CacheHelper.cs" />
+    <Compile Include="util\ChartHelper.cs" />
+    <Compile Include="util\CreateSqlHelper.cs" />
+    <Compile Include="util\DbConvert.cs" />
+    <Compile Include="util\DesHelper.cs" />
+    <Compile Include="util\JsonHelper.cs" />
+    <Compile Include="util\MessageHelper.cs" />
+    <Compile Include="util\LogHelp.cs" />
+    <Compile Include="util\NvelocityUtil.cs" />
+    <Compile Include="util\PropertyHelper.cs" />
+    <Compile Include="extendmethods\ReflectExpand.cs" />
+    <Compile Include="extendmethods\StringExtend.cs" />
+    <Compile Include="ifs\IColumService.cs" />
+    <Compile Include="ifs\impl\ColumServiceImpl.cs" />
+    <Compile Include="ifs\impl\IUploadCommonIFS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prop\FormWindowProp.cs" />
+    <Compile Include="util\AsposeExcel.cs" />
+    <Compile Include="util\AsposeWordUtil.cs" />
+    <Compile Include="util\ContantUtils.cs" />
+    <Compile Include="util\DateUtil.cs" />
+    <Compile Include="util\DialogUtil.cs" />
+    <Compile Include="util\ExcelUtil.cs" />
+    <Compile Include="util\FileUtil.cs" />
+    <Compile Include="util\FileUtils.cs" />
+    <Compile Include="util\FormTransform.cs" />
+    <Compile Include="util\LocalFileDownLoad.cs" />
+    <Compile Include="util\LocalFileUpLoad.cs" />
+    <Compile Include="util\LocalFileUtil.cs" />
+    <Compile Include="util\Md5Util.cs" />
+    <Compile Include="util\ObjectUtil.cs" />
+    <Compile Include="util\RemoteFileUpload.cs" />
+    <Compile Include="util\UTHelper.cs" />
+    <Compile Include="util\VerifyUtil.cs" />
+    <Compile Include="util\HttpRequestUtil.cs" />
+    <Compile Include="util\FormHelp.cs" />
+    <Compile Include="util\XmlParseUtil.cs" />
+    <Compile Include="vo\ComboBoxVo.cs" />
+    <Compile Include="vo\ConstantVo.cs" />
+    <Compile Include="vo\CsProjectCode.cs" />
+    <Compile Include="vo\FileInfoVo.cs" />
+    <Compile Include="dto\MessageInfo.cs" />
+    <Compile Include="dto\R.cs" />
+    <Compile Include="vo\GridViewUploadProp.cs" />
+    <Compile Include="vo\PageInfo.cs" />
+    <Compile Include="vo\SysFileInfo.cs" />
+    <Compile Include="vo\TransferEntityVo.cs" />
+    <Compile Include="vo\XmlSql.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dll\System.Data.SQLite.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\Aspose.Cells.xml" />
+    <Content Include="dll\Aspose.Email.xml" />
+    <Content Include="dll\Aspose.Pdf.xml" />
+    <Content Include="dll\Aspose.Slides.xml" />
+    <Content Include="dll\Aspose.Words.xml" />
+    <Content Include="dll\net4.0\Aspose.PDF.xml" />
+    <Content Include="dll\node.dll" />
+    <Content Include="dll\System.Data.SQLite.dll" />
+    <Content Include="dll\UTCAdapt.dll" />
+    <Content Include="dll\UTCCrypt.dll" />
+    <Content Include="dll\UTCSeal.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

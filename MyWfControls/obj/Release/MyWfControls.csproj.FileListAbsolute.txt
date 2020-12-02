@@ -1,0 +1,9 @@
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\bin\Release\MyWfControls.dll
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\bin\Release\MyWfControls.pdb
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.csprojAssemblyReference.cache
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.KenPage.resources
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.Properties.Resources.resources
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.csproj.GenerateResource.cache
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.csproj.CoreCompileInputs.cache
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.dll
+E:\projectpath\csharp-code\myproject\personal-manage\MyWfControls\obj\Release\MyWfControls.pdb
