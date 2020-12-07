@@ -1,6 +1,6 @@
 ﻿
 using System;
-
+using System.IO;
 using System.Windows.Forms;
 using personal_manage.Common.dto;
 using personal_manage.Common.util;
@@ -29,8 +29,14 @@ namespace personal_manage.UI.Mytools
         {
             try
             {
-                UKResult uKResult = UTHelper.FileEncryption(this.textBox1.Text, txtPublicKey);
 
+                string outFile = Path.Combine(Path.GetDirectoryName(this.textBox1.Text), Path.GetFileName(this.textBox1.Text) + ".enc"); ;
+                MySecurity mySecurity = new MySecurity();
+                mySecurity.EncryptFile(this.textBox1.Text, outFile,"");
+                MessageBox.Show("加密成功,文件位置:" + outFile);
+                this.txtCryPath.Text = outFile;
+
+                /*UKResult uKResult = UTHelper.FileEncryption(this.textBox1.Text, txtPublicKey);
                 if (uKResult.Code == "0")
                 {
                     MessageBox.Show("加密成功," + uKResult.Result);
@@ -39,7 +45,7 @@ namespace personal_manage.UI.Mytools
                 else
                 {
                     MessageBox.Show("加密失败," + uKResult.Message);
-                }
+                }*/
             }
             catch (Exception ex)
             {
@@ -52,8 +58,17 @@ namespace personal_manage.UI.Mytools
         {
             try
             {
-                UKResult uKResult = UTHelper.FileDecryption(this.textBox1.Text);
-
+                string outFile = Path.Combine(Path.GetDirectoryName(this.textBox1.Text), @"decry\" + Path.GetFileName(this.textBox1.Text).Replace(".enc", ""));
+                FileInfo file = new FileInfo(outFile);
+                if (!file.Directory.Exists)
+                {
+                    file.Directory.Create();
+                }
+                MySecurity mySecurity = new MySecurity();
+                mySecurity.DecryptFile(this.textBox1.Text, outFile, "");
+                this.txtCryPath.Text = outFile;
+ 
+                /*UKResult uKResult = UTHelper.FileDecryption(this.textBox1.Text);
                 if (uKResult.Code == "0")
                 {
                     MessageBox.Show("解密成功," + uKResult.Result);
@@ -62,7 +77,7 @@ namespace personal_manage.UI.Mytools
                 else
                 {
                     MessageBox.Show("解密失败," + uKResult.Message);
-                }
+                }*/
             }
             catch (Exception ex)
             {
@@ -89,12 +104,14 @@ namespace personal_manage.UI.Mytools
                 label3.Text = "加密后的文件";
                 btnEncFile.Enabled = true;
                 btnDesFIle.Enabled = false;
+                this.txtCryPath.Clear();
             }
             else if (type == "解密")
             {
                 label3.Text = "解密后的文件";
                 btnDesFIle.Enabled = true;
                 btnEncFile.Enabled = false;
+                this.txtCryPath.Clear();
             }
         }
     }
