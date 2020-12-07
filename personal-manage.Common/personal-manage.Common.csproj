@@ -114,18 +114,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
-    <Reference Include="UTCAdapt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4ea014baebeb69c9, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\UTCAdapt.dll</HintPath>
-    </Reference>
-    <Reference Include="UTCCrypt, Version=1.0.0.0, Culture=neutral, PublicKeyToken=478818ed31cb2747, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\UTCCrypt.dll</HintPath>
-    </Reference>
-    <Reference Include="UTCSeal, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d234635f574b2c58, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>dll\UTCSeal.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="attr\ColumnInfoAttribute.cs" />
@@ -180,7 +168,6 @@
     <Compile Include="util\Md5Util.cs" />
     <Compile Include="util\ObjectUtil.cs" />
     <Compile Include="util\RemoteFileUpload.cs" />
-    <Compile Include="util\UTHelper.cs" />
     <Compile Include="util\VerifyUtil.cs" />
     <Compile Include="util\HttpRequestUtil.cs" />
     <Compile Include="util\FormHelp.cs" />
@@ -211,9 +198,6 @@
     <Content Include="dll\net4.0\Aspose.PDF.xml" />
     <Content Include="dll\node.dll" />
     <Content Include="dll\System.Data.SQLite.dll" />
-    <Content Include="dll\UTCAdapt.dll" />
-    <Content Include="dll\UTCCrypt.dll" />
-    <Content Include="dll\UTCSeal.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
