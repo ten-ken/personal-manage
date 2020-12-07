@@ -151,6 +151,8 @@
     <Compile Include="util\CreateSqlHelper.cs" />
     <Compile Include="util\DbConvert.cs" />
     <Compile Include="util\DesHelper.cs" />
+    <Compile Include="util\MacHelper.cs" />
+    <Compile Include="util\MySecurity.cs" />
     <Compile Include="util\JsonHelper.cs" />
     <Compile Include="util\MessageHelper.cs" />
     <Compile Include="util\LogHelp.cs" />
