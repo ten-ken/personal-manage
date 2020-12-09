@@ -43,6 +43,7 @@
             this.AUTHOR = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dbBiao = new System.Windows.Forms.Label();
+            this.buttonSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             this.panel1.Controls.Add(this.keyWord);
             this.panel1.Controls.Add(this.codeFolder);
             this.panel1.Controls.Add(this.TOP_LEVEL);
+            this.panel1.Controls.Add(this.buttonSearch);
             this.panel1.Controls.Add(this.ClearTables);
             this.panel1.Controls.Add(this.OpenFolder);
             this.panel1.Controls.Add(this.SaveBtn);
@@ -207,6 +209,22 @@
             this.dbBiao.TabIndex = 48;
             this.dbBiao.Text = "数据库表选择";
             // 
+            // buttonSearch
+            // 
+            this.buttonSearch.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.buttonSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonSearch.Font = new System.Drawing.Font("新宋体", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonSearch.ForeColor = System.Drawing.Color.IndianRed;
+            this.buttonSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSearch.Location = new System.Drawing.Point(445, 158);
+            this.buttonSearch.Name = "buttonSearch";
+            this.buttonSearch.Size = new System.Drawing.Size(48, 25);
+            this.buttonSearch.TabIndex = 58;
+            this.buttonSearch.Text = "搜索";
+            this.buttonSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonSearch.UseVisualStyleBackColor = false;
+            this.buttonSearch.Click += new System.EventHandler(this.Search_Click);
+            // 
             // FormCreate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -240,5 +258,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox codeFolder;
         private System.Windows.Forms.Button ClearTables;
+        private System.Windows.Forms.Button buttonSearch;
     }
 }
