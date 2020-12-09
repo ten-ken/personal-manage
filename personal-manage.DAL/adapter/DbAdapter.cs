@@ -104,7 +104,7 @@ namespace personal_manage.DAL.adapter
             sbf.Append("WHERE   A.TABLE_NAME = b.TABLE_NAME ");
             if (!string.IsNullOrEmpty(tableKeyword))
             {
-                sbf.Append(" and A .TABLE_NAME = 'OS_ZB_SUPPLIER_MEQP_INFO'");
+                sbf.Append($" and A .TABLE_NAME = '{tableKeyword}'");
             }
             sbf.Append(" ORDER BY TABLE_NAME");
             OracleHelper.connectionString = dbConnect;
