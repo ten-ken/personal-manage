@@ -1,6 +1,6 @@
 # personal-manage
 
-<span style='color:orange;font-size:15'>最新版本在gitee上，如有需要请在gitee上搜索ten-ken</span>
+## 最新版本在gitee上，如有需要请在gitee上搜索ten-ken
 
 项目配置:
 
